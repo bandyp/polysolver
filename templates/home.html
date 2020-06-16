@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <title>Polynomial Solver</title>
+</head>
+<body>
+
+    <div class="container text-center bg-info">
+        <div class="page-header my-2">
+            <h1>Polynomial Solver</h1>
+        </div>
+        <div class="row text-secondary">
+            <div class="col xCoord border border-secondary bg-white rounded p-2 m-2 bg-light">
+                <h5>X coordinates</h5>
+                {% for x in x %}
+                    <p>{{ x }}</p>
+                {% endfor %}
+            </div>
+            <div class="col yCoord border border-secondary bg-white rounded p-2 m-2 bg-light">
+                <h5>Y coordinates</h5>
+                {% for y in y %}
+                    <p>{{ y }}</p>
+                {% endfor %}
+            </div>
+            <div class="col answers border border-secondary bg-white rounded p-2 m-2 bg-light">
+                <h6>Polynomial Coefficents are:</h6>
+                <p>{{ coeff }}</p>
+                <h6>Polynomial equation is:</h6>
+                <p>{{ mymodel }}</p>
+                <h6>Y is 0 when x is at:</h6>
+                <p>{{ rootsp }}</p>
+            </div>
+        </div>
+        <div class="row">
+               <div class="img mx-auto">
+                    <image src="{{ url_for('static', filename='figure.png')}}" title="Polynomial">
+               </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

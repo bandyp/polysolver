@@ -1,3 +1,10 @@
 .xCoord {
-    background-color: red;
+    overflow: scroll;
+    height: 400px
 }
+
+.yCoord {
+    overflow: scroll;
+    height: 400px
+}
+
