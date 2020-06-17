@@ -2,7 +2,7 @@
 Simple app to plot selected x and y coordinates with a bit of calculus added in for good measure. 
 
 ## UX
-I wanted to keep it very simple and not take away from the objective of the task. Simple colous and easy to read results. 
+I wanted to keep it very simple and not take away from the objective of the task. Simple colours and easy to read results. 
 
 ### Users
 Expected users could be anyone who wants to find the equation for a polynomial, or calculate to 0.
